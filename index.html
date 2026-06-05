@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#" class="logo">Coffee<span>.</span></a>
+    <nav>
+      <a href="#why" data-lang="why">Почему мы</a>
+      <a href="#menu" data-lang="menuNav">Меню</a>
+      <a href="#reviews" data-lang="reviewsNav">Отзывы</a>
+      <a href="#contact" data-lang="contactNav">Контакты</a>
+    </nav>
+    <div class="lang-switch">
+      <button onclick="setLanguage('ru')" id="btn-ru" class="active">RU</button>
+      <button onclick="setLanguage('en')" id="btn-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-eyebrow" data-lang="eyebrow">Specialty Coffee · Москва</span>
+    <h1 data-lang="heroTitle">Кофе, который<br><em>запомнится</em></h1>
+    <p data-lang="heroSub">Свежая обжарка и идеальный вкус каждый день — в каждой чашке.</p>
+    <a href="#menu" class="btn"><span data-lang="heroCta">Смотреть меню</span></a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section">
+    <p class="section-label" data-lang="whyLabel">Наши принципы</p>
+    <h2 class="section-title" data-lang="whyTitle">Почему выбирают нас</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">☕</div>
+        <h3 data-lang="q1Title">Качество</h3>
+        <p data-lang="q1Text">Лучшие зёрна со всего мира — Эфиопия, Колумбия, Бразилия. Только свежая обжарка.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🕯</div>
+        <h3 data-lang="q2Title">Атмосфера</h3>
+        <p data-lang="q2Text">Уют и минимализм. Место, где хочется остаться на второй кофе и ещё один.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✦</div>
+        <h3 data-lang="q3Title">Сервис</h3>
+        <p data-lang="q3Text">Быстро и с улыбкой. Наши бариста знают своё дело и готовы ответить на любой вопрос.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- MENU -->
+<section id="menu" style="background:var(--espresso);">
+  <div class="section">
+    <p class="section-label" data-lang="menuLabel">Наши напитки</p>
+    <h2 class="section-title" data-lang="menuTitle">Меню</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m1">Эспрессо</div>
+          <div class="menu-item-desc" data-lang="m1d">Чистый, плотный, концентрированный</div>
+        </div>
+        <div class="menu-item-price">120 ₽</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m2">Капучино</div>
+          <div class="menu-item-desc" data-lang="m2d">Эспрессо и нежная молочная пена</div>
+        </div>
+        <div class="menu-item-price">180 ₽</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m3">Латте</div>
+          <div class="menu-item-desc" data-lang="m3d">Мягкий, сливочный, согревающий</div>
+        </div>
+        <div class="menu-item-price">200 ₽</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m4">Фильтр кофе</div>
+          <div class="menu-item-desc" data-lang="m4d">Раскрытый вкус без лишнего</div>
+        </div>
+        <div class="menu-item-price">150 ₽</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m5">Флэт уайт</div>
+          <div class="menu-item-desc" data-lang="m5d">Двойной эспрессо, меньше молока</div>
+        </div>
+        <div class="menu-item-price">190 ₽</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <div class="menu-item-name" data-lang="m6">Альтернатива</div>
+          <div class="menu-item-desc" data-lang="m6d">Пуровер, аэропресс, кемекс</div>
+        </div>
+        <div class="menu-item-price">170 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section">
+    <p class="section-label" data-lang="revLabel">Гости о нас</p>
+    <h2 class="section-title" data-lang="revTitle">Отзывы</h2>
+    <div class="reviews-grid">
+      <div class="review">
+        <p data-lang="r1">"Лучший кофе, который я пробовал в Москве. Эспрессо идеален."</p>
+        <div class="review-author" data-lang="r1a">— Алексей М.</div>
+      </div>
+      <div class="review">
+        <p data-lang="r2">"Очень уютное место. Прихожу каждое утро — стало ритуалом."</p>
+        <div class="review-author" data-lang="r2a">— Мария К.</div>
+      </div>
+      <div class="review">
+        <p data-lang="r3">"Быстрое обслуживание, отличный вкус и приятная атмосфера."</p>
+        <div class="review-author" data-lang="r3a">— Дмитрий П.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--cream-dark);">
+  <div class="section">
+    <p class="section-label" data-lang="conLabel">Найти нас</p>
+    <h2 class="section-title" data-lang="conTitle">Контакты</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          <strong data-lang="conA">Адрес</strong>
+          <span>Москва, ул. Пример, 1</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-text">
+          <strong data-lang="conP">Телефон</strong>
+          <span>+7 999 123-45-67</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⏰</div>
+        <div class="contact-text">
+          <strong data-lang="conH">Часы работы</strong>
+          <span>08:00 – 22:00, ежедневно</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-text">
+          <strong data-lang="conE">Email</strong>
+          <span>hello@coffeehouse.ru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Coffee House</strong>. <span data-lang="footer">Все права защищены.</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
